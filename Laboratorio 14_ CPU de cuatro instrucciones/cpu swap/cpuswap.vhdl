@@ -91,7 +91,7 @@ architecture beh of cpuswap is
             clk => clk,
             swap => cop,
             t0 => a_t0,
-            ti => a_t1,
+            t1 => a_t1,
             t2 => a_t2,
             done => done
         );
