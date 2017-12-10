@@ -16,7 +16,7 @@ architecture beh of buffer3e is
             if h='1' then
                 sal <= ent;
             else
-                sal<=(others => 'z');
+                sal<=(others => 'Z');
             end if ;
         end process;
  end architecture beh;
