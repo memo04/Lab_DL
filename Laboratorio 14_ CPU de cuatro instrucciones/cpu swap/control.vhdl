@@ -19,7 +19,7 @@ begin
     process( clk )
     begin
         if clk'event and clk = '1' then
-            if swap then
+            if swap = '1'  then
                 case( estado ) is
                     when 0 =>
                         t0 <= '1';t1 <= '0';t2 <= '0';
