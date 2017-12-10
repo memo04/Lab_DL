@@ -1,6 +1,6 @@
 library ieee;
 use ieee.std_logic_1164.all;
-use work.ac_bib.all
+use work.ac_bib.all;
 
 entity tb_cpuswap is
 end tb_cpuswap;
