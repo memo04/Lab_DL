@@ -5,7 +5,7 @@ use work.ac_bib.all;
 entity tb_cpuswap is
 end tb_cpuswap;
 
-architecture beh of ent is
+architecture beh of tb_cpuswap is
     component cpuswap is
         port(
             clk: in std_logic;
