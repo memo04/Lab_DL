@@ -1,0 +1,6 @@
+Realizar la descripción, síntesis y análisis del circuito addsub4f de las siguintes formas:
+
+Modular
+Procesos
+Funciones
+Una función
