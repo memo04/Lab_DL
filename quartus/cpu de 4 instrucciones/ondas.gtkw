@@ -1,0 +1,39 @@
+[*]
+[*] GTKWave Analyzer v3.3.78 (w)1999-2016 BSI
+[*] Thu Jul 27 02:46:03 2017
+[*]
+[dumpfile] "/home/fabian/cpu/cpu de 4 instrucciones/tb_cpu4inst.vcd"
+[dumpfile_mtime] "Thu Jul 27 02:45:20 2017"
+[dumpfile_size] 53333
+[savefile] "/home/fabian/cpu/cpu de 4 instrucciones/ondas.gtkw"
+[timestart] 862700000
+[size] 929 600
+[pos] 466 42
+*-26.071138 928200000 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1
+[sst_width] 229
+[signals_width] 227
+[sst_expanded] 1
+[sst_vpaned_height] 139
+@28
+u0.clk
+botoninst[7:0]
+done
+@20000
+-
+@28
+u0.cont.inst[7:0]
+u0.cont.q[12:0]
+@420
+u0.cont.ep
+u0.cont.es
+@28
+u0.cont.done
+@29
+u0.cont.q[12:0]
+@28
+u0.alu0.a[3:0]
+u0.alu0.b[3:0]
+u0.alu0.f
+u0.alu0.result[3:0]
+[pattern_trace] 1
+[pattern_trace] 0

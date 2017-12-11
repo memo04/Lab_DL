@@ -1,0 +1,302 @@
+Quartus II
+Version 9.1 Build 222 10/21/2009 SJ Web Edition
+11
+1000
+OFF
+OFF
+OFF
+ON
+ON
+ON
+FV_OFF
+Level2
+0
+0
+VRSM_ON
+VHSM_ON
+0
+-- Start Library Paths --
+-- End Library Paths --
+-- Start VHDL Libraries --
+-- End VHDL Libraries --
+# entity
+buffer3e
+# storage
+db|cpu4inst.(3).cnf
+db|cpu4inst.(3).cnf
+# logic_option {
+AUTO_RAM_RECOGNITION
+ON
+}
+# case_insensitive
+# source_file
+buffer3e.vhdl
+4785bd2acc95fc119936808c7dedbbdb
+5
+# internal_option {
+HDL_INITIAL_FANOUT_LIMIT
+OFF
+AUTO_RESOURCE_SHARING
+OFF
+AUTO_RAM_RECOGNITION
+ON
+AUTO_ROM_RECOGNITION
+ON
+}
+# user_parameter {
+ constraint(ent)
+3 downto 0
+PARAMETER_STRING
+USR
+ constraint(sal)
+3 downto 0
+PARAMETER_STRING
+USR
+}
+# hierarchies {
+buffer3e:b0
+buffer3e:b1
+buffer3e:b2
+buffer3e:b3
+buffer3e:b4
+buffer3e:b5
+}
+# lmf
+c:|altera|91|quartus|lmf|maxplus2.lmf
+a36c8ec425c8a2589af98b2d4daabc3
+# macro_sequence
+
+# end
+# entity
+alu
+# storage
+db|cpu4inst.(4).cnf
+db|cpu4inst.(4).cnf
+# logic_option {
+AUTO_RAM_RECOGNITION
+ON
+}
+# case_insensitive
+# source_file
+alu.vhdl
+9cab79fc12cfd8de044a1c2683eb02c
+5
+# internal_option {
+HDL_INITIAL_FANOUT_LIMIT
+OFF
+AUTO_RESOURCE_SHARING
+OFF
+AUTO_RAM_RECOGNITION
+ON
+AUTO_ROM_RECOGNITION
+ON
+}
+# user_parameter {
+ constraint(a)
+3 downto 0
+PARAMETER_STRING
+USR
+ constraint(b)
+3 downto 0
+PARAMETER_STRING
+USR
+ constraint(result)
+3 downto 0
+PARAMETER_STRING
+USR
+}
+# hierarchies {
+alu:alu0
+}
+# lmf
+c:|altera|91|quartus|lmf|maxplus2.lmf
+a36c8ec425c8a2589af98b2d4daabc3
+# macro_sequence
+
+# end
+# entity
+decobin2hex7seg
+# storage
+db|cpu4inst.(5).cnf
+db|cpu4inst.(5).cnf
+# logic_option {
+AUTO_RAM_RECOGNITION
+ON
+}
+# case_insensitive
+# source_file
+decobin2hex7seg.vhdl
+25123569be6fafa217a5ddae456d4d7
+5
+# internal_option {
+HDL_INITIAL_FANOUT_LIMIT
+OFF
+AUTO_RESOURCE_SHARING
+OFF
+AUTO_RAM_RECOGNITION
+ON
+AUTO_ROM_RECOGNITION
+ON
+}
+# user_parameter {
+ constraint(ent)
+3 downto 0
+PARAMETER_STRING
+USR
+ constraint(sal)
+6 downto 0
+PARAMETER_STRING
+USR
+}
+# include_file {
+dl_bib.vhdl
+c153fc8665bcccec1f192acb332e75d8
+}
+# hierarchies {
+decobin2hex7seg:u0
+decobin2hex7seg:u1
+decobin2hex7seg:u2
+decobin2hex7seg:u3
+decobin2hex7seg:u4
+decobin2hex7seg:u5
+}
+# lmf
+c:|altera|91|quartus|lmf|maxplus2.lmf
+a36c8ec425c8a2589af98b2d4daabc3
+# macro_sequence
+
+# end
+# entity
+control
+# storage
+db|cpu4inst.(1).cnf
+db|cpu4inst.(1).cnf
+# logic_option {
+AUTO_RAM_RECOGNITION
+ON
+}
+# case_insensitive
+# source_file
+control.vhdl
+b7d3cf177deba60877df3038dccf4
+5
+# internal_option {
+HDL_INITIAL_FANOUT_LIMIT
+OFF
+AUTO_RESOURCE_SHARING
+OFF
+AUTO_RAM_RECOGNITION
+ON
+AUTO_ROM_RECOGNITION
+ON
+}
+# user_parameter {
+ constraint(inst)
+7 downto 0
+PARAMETER_STRING
+USR
+ constraint(q)
+12 downto 0
+PARAMETER_STRING
+USR
+ constraint(busw)
+3 downto 0
+PARAMETER_STRING
+USR
+}
+# hierarchies {
+control:cont
+}
+# lmf
+c:|altera|91|quartus|lmf|maxplus2.lmf
+a36c8ec425c8a2589af98b2d4daabc3
+# macro_sequence
+
+# end
+# entity
+registro
+# storage
+db|cpu4inst.(2).cnf
+db|cpu4inst.(2).cnf
+# logic_option {
+AUTO_RAM_RECOGNITION
+ON
+}
+# case_insensitive
+# source_file
+registro.vhdl
+6c1eccd582be3dd719389c53fabaa
+5
+# internal_option {
+HDL_INITIAL_FANOUT_LIMIT
+OFF
+AUTO_RESOURCE_SHARING
+OFF
+AUTO_RAM_RECOGNITION
+ON
+AUTO_ROM_RECOGNITION
+ON
+}
+# user_parameter {
+ constraint(ent)
+3 downto 0
+PARAMETER_STRING
+USR
+ constraint(sal)
+3 downto 0
+PARAMETER_STRING
+USR
+}
+# hierarchies {
+registro:r0
+registro:r1
+registro:r2
+registro:r3
+registro:rt0
+registro:rt1
+}
+# lmf
+c:|altera|91|quartus|lmf|maxplus2.lmf
+a36c8ec425c8a2589af98b2d4daabc3
+# macro_sequence
+
+# end
+# entity
+cpu4inst
+# storage
+db|cpu4inst.(0).cnf
+db|cpu4inst.(0).cnf
+# logic_option {
+AUTO_RAM_RECOGNITION
+ON
+}
+# case_insensitive
+# source_file
+cpu4inst.vhdl
+99aee8ca1be06f771f803236b088658d
+5
+# internal_option {
+HDL_INITIAL_FANOUT_LIMIT
+OFF
+AUTO_RESOURCE_SHARING
+OFF
+AUTO_RAM_RECOGNITION
+ON
+AUTO_ROM_RECOGNITION
+ON
+}
+# include_file {
+dl_bib.vhdl
+c153fc8665bcccec1f192acb332e75d8
+}
+# hierarchies {
+|
+}
+# lmf
+c:|altera|91|quartus|lmf|maxplus2.lmf
+a36c8ec425c8a2589af98b2d4daabc3
+# macro_sequence
+
+# end
+# complete
+

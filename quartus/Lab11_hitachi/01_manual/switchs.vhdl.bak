@@ -1,0 +1,19 @@
+--Manuel Eduardo Hernandez Ruiz
+--Ing. en Electronica 
+--Matricula: 2152000347
+
+entity switchs is 
+	port(
+		ent:  in bit_vector (11 downto 0);
+		lent: out bit_vector (11 downto ) ;
+		sal: out bit_vector (11 downto 0)
+		);
+end entity;
+
+architecture manolo of switchs is 
+begin 
+
+	lent <= ent;
+	sal <= ent;
+
+end architecture manolo;

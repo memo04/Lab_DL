@@ -1,0 +1,127 @@
+# -------------------------------------------------------------------------- #
+#
+# Copyright (C) 1991-2009 Altera Corporation
+# Your use of Altera Corporation's design tools, logic functions 
+# and other software and tools, and its AMPP partner logic 
+# functions, and any output files from any of the foregoing 
+# (including device programming or simulation files), and any 
+# associated documentation or information are expressly subject 
+# to the terms and conditions of the Altera Program License 
+# Subscription Agreement, Altera MegaCore Function License 
+# Agreement, or other applicable license agreement, including, 
+# without limitation, that your use is for the sole purpose of 
+# programming logic devices manufactured by Altera and sold by 
+# Altera or its authorized distributors.  Please refer to the 
+# applicable agreement for further details.
+#
+# -------------------------------------------------------------------------- #
+#
+# Quartus II
+# Version 9.1 Build 222 10/21/2009 SJ Web Edition
+# Date created = 13:35:02  December 05, 2017
+#
+# -------------------------------------------------------------------------- #
+#
+# Notes:
+#
+# 1) The default values for assignments are stored in the file:
+#		cpu4inst_assignment_defaults.qdf
+#    If this file doesn't exist, see file:
+#		assignment_defaults.qdf
+#
+# 2) Altera recommends that you do not modify this file. This
+#    file is updated automatically by the Quartus II software
+#    and any changes you make may be lost or overwritten.
+#
+# -------------------------------------------------------------------------- #
+
+
+set_global_assignment -name FAMILY "Cyclone II"
+set_global_assignment -name DEVICE EP2C35F672C6
+set_global_assignment -name TOP_LEVEL_ENTITY cpu4inst
+set_global_assignment -name ORIGINAL_QUARTUS_VERSION 9.1
+set_global_assignment -name PROJECT_CREATION_TIME_DATE "13:35:02  DECEMBER 05, 2017"
+set_global_assignment -name LAST_QUARTUS_VERSION 9.1
+set_global_assignment -name USE_GENERATED_PHYSICAL_CONSTRAINTS OFF -section_id eda_blast_fpga
+set_global_assignment -name VHDL_FILE alu.vhdl
+set_global_assignment -name VHDL_FILE buffer3e.vhdl
+set_global_assignment -name VHDL_FILE control.vhdl
+set_global_assignment -name VHDL_FILE cpu4inst.vhdl
+set_global_assignment -name VHDL_FILE dl_bib.vhdl
+set_global_assignment -name VHDL_FILE registro.vhdl
+set_global_assignment -name MIN_CORE_JUNCTION_TEMP 0
+set_global_assignment -name MAX_CORE_JUNCTION_TEMP 85
+set_global_assignment -name PARTITION_NETLIST_TYPE SOURCE -section_id Top
+set_global_assignment -name PARTITION_COLOR 16764057 -section_id Top
+set_global_assignment -name LL_ROOT_REGION ON -section_id "Root Region"
+set_global_assignment -name LL_MEMBER_STATE LOCKED -section_id "Root Region"
+set_global_assignment -name PARTITION_FITTER_PRESERVATION_LEVEL PLACEMENT_AND_ROUTING -section_id Top
+set_global_assignment -name STRATIX_DEVICE_IO_STANDARD "3.3-V LVTTL"
+set_location_assignment PIN_AE22 -to done
+set_location_assignment PIN_N25 -to inst[0]
+set_location_assignment PIN_N26 -to inst[1]
+set_location_assignment PIN_P25 -to inst[2]
+set_location_assignment PIN_AE14 -to inst[3]
+set_location_assignment PIN_AF14 -to inst[4]
+set_location_assignment PIN_AD13 -to inst[5]
+set_location_assignment PIN_AC13 -to inst[6]
+set_location_assignment PIN_C13 -to inst[7]
+set_location_assignment PIN_J1 -to lcd[0]
+set_location_assignment PIN_J2 -to lcd[1]
+set_location_assignment PIN_H1 -to lcd[2]
+set_location_assignment PIN_H2 -to lcd[3]
+set_location_assignment PIN_J4 -to lcd[4]
+set_location_assignment PIN_J3 -to lcd[5]
+set_location_assignment PIN_H4 -to lcd[6]
+set_location_assignment PIN_H3 -to lcd[7]
+set_location_assignment PIN_K4 -to lcd[8]
+set_location_assignment PIN_K1 -to lcd[9]
+set_location_assignment PIN_K3 -to lcd[10]
+set_location_assignment PIN_L4 -to lcd[11]
+set_location_assignment PIN_AE23 -to led
+set_global_assignment -name VHDL_FILE decobin2hex7seg.vhdl
+set_location_assignment PIN_AF10 -to dr0[0]
+set_location_assignment PIN_AB12 -to dr0[1]
+set_location_assignment PIN_AC12 -to dr0[2]
+set_location_assignment PIN_AD11 -to dr0[3]
+set_location_assignment PIN_AE11 -to dr0[4]
+set_location_assignment PIN_V14 -to dr0[5]
+set_location_assignment PIN_V13 -to dr0[6]
+set_location_assignment PIN_V20 -to dr1[0]
+set_location_assignment PIN_V21 -to dr1[1]
+set_location_assignment PIN_W21 -to dr1[2]
+set_location_assignment PIN_Y22 -to dr1[3]
+set_location_assignment PIN_AA24 -to dr1[4]
+set_location_assignment PIN_AA23 -to dr1[5]
+set_location_assignment PIN_AB24 -to dr1[6]
+set_location_assignment PIN_AB23 -to dr2[0]
+set_location_assignment PIN_V22 -to dr2[1]
+set_location_assignment PIN_AC25 -to dr2[2]
+set_location_assignment PIN_AC26 -to dr2[3]
+set_location_assignment PIN_AB26 -to dr2[4]
+set_location_assignment PIN_AB25 -to dr2[5]
+set_location_assignment PIN_Y24 -to dr2[6]
+set_location_assignment PIN_U9 -to dt0[0]
+set_location_assignment PIN_U1 -to dt0[1]
+set_location_assignment PIN_U2 -to dt0[2]
+set_location_assignment PIN_T4 -to dt0[3]
+set_location_assignment PIN_R7 -to dt0[4]
+set_location_assignment PIN_R6 -to dt0[5]
+set_location_assignment PIN_T3 -to dt0[6]
+set_location_assignment PIN_T2 -to dt1[0]
+set_location_assignment PIN_P6 -to dt1[1]
+set_location_assignment PIN_P7 -to dt1[2]
+set_location_assignment PIN_T9 -to dt1[3]
+set_location_assignment PIN_R5 -to dt1[4]
+set_location_assignment PIN_R4 -to dt1[5]
+set_location_assignment PIN_R3 -to dt1[6]
+set_global_assignment -name MISC_FILE "F:/cpu de 4 instrucciones/cpu4inst.dpf"
+set_location_assignment PIN_N2 -to interna
+set_location_assignment PIN_W24 -to dr3[6]
+set_location_assignment PIN_U22 -to dr3[5]
+set_location_assignment PIN_Y25 -to dr3[4]
+set_location_assignment PIN_Y26 -to dr3[3]
+set_location_assignment PIN_AA26 -to dr3[2]
+set_location_assignment PIN_AA25 -to dr3[1]
+set_location_assignment PIN_Y23 -to dr3[0]
+set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -section_id Top
