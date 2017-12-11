@@ -2,8 +2,8 @@ all: tb_cpuswap.vcd
 
 tb_cpuswap.vcd: ac_bib.o registro.o buffer3e.o control.o cpuswap.o tb_cpuswap.o
 	ghdl -e tb_cpuswap
-	./tb_cpuswap --stop-time=5000ns --vcd=tb_cpuswap.vcd
-	gtkwave tb_cpuswap.vcd ondas.gtkw
+	./tb_cpuswap --stop-time=500ns --vcd=tb_cpuswap.vcd
+	gtkwave tb_cpuswap.vcd ondas.sav
 
 ac_bib.o: ac_bib.vhdl
 	ghdl -a ac_bib.vhdl
