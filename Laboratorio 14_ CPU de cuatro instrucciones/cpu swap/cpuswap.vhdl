@@ -9,6 +9,7 @@ entity cpuswap is
         r0: out std_logic_vector(3 downto 0);
         r1: out std_logic_vector(3 downto 0);
         rt: out std_logic_vector(3 downto 0);
+        ralam: out std_logic_vector(3 downto 0);
         done:out std_logic
     );
 end cpuswap;
@@ -25,17 +26,20 @@ architecture beh of cpuswap is
     signal a_t2:std_logic;
     signal externo:std_logic;
     alias datos:std_logic_vector(3 downto 0) is inst(3 downto 0);
-    alias cop:std_logic is inst(5);
     alias reg:std_logic is inst(4);
+    alias cop:std_logic is inst(5);
+    
 
     begin
         externo <= not cop;
         comp_2_reg0 <= a_t1 or (not reg and externo);
-        comp_2_reg1 <= a_t2 or reg;
+        comp_2_reg1 <= (a_t2 or reg);
+        ---------------------------
         r0 <= r0_2_b0;
         r1 <= r1_2_b1;
         rt <= rt_2_bt;
-        
+        ralam <= bus_alam;
+
         --registros
         reg0:registro
         port map(
@@ -62,6 +66,12 @@ architecture beh of cpuswap is
         );   
         
         --buffers
+        be:buffer3e
+        port map(
+            ent => datos,
+            h => externo,
+            sal => bus_alam
+        );
 
         b0:buffer3e
         port map(
@@ -81,13 +91,6 @@ architecture beh of cpuswap is
         port map(
             ent => rt_2_bt,
             h => a_t2,
-            sal => bus_alam
-        );
-
-        be:buffer3e
-        port map(
-            ent => datos,
-            h => externo,
             sal => bus_alam
         );
 
