@@ -3,9 +3,9 @@ use ieee.std_logic_1164.all;
 
 entity registro is
   port (
-    clk: in std_logic;
-    ent: in std_logic_vector(3 downto 0);
-    h : in std_logic;
+    clk: in  std_logic;
+    ent: in  std_logic_vector(3 downto 0);
+    h :  in  std_logic;
     sal: out std_logic_vector(3 downto 0)
   ) ;
 end registro ;

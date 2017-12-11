@@ -3,11 +3,11 @@ use ieee.std_logic_1164.all;
 
 entity control is
   port (
-    clk: in std_logic;
-    swap: in std_logic;
-    t0: out std_logic;
-    t1: out std_logic;
-    t2: out std_logic;
+    clk:  in  std_logic;
+    swap: in  std_logic;
+    t0:   out std_logic;
+    t1:   out std_logic;
+    t2:   out std_logic;
     done: out std_logic
   ) ;
 end control ;
@@ -20,7 +20,7 @@ begin
     begin
         if clk'event and clk = '1' then
             if swap = '1'  then
-                case( estado ) is
+                case estado is
                     when 0 =>
                         t0 <= '1';t1 <= '0';t2 <= '0';
                         estado <= 1;        
@@ -35,8 +35,8 @@ begin
                         done <= '1';
                 end case ;
                 else
-                t0 <= '0';t1 <= '0';t2 <= '0';
-                done <= '0';
+                    t0 <= '0';t1 <= '0';t2 <= '0';
+                    done <= '0';
             end if ;
         end if ;
     end process ;

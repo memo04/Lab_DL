@@ -1,24 +1,28 @@
 [*]
 [*] GTKWave Analyzer v3.3.78 (w)1999-2016 BSI
-[*] Sun Dec 10 22:28:31 2017
+[*] Sun Dec 10 23:13:43 2017
 [*]
 [dumpfile] "/home/gdrb/git/Lab_DL/Laboratorio 14_ CPU de cuatro instrucciones/cpu swap/tb_cpuswap.vcd"
-[dumpfile_mtime] "Sun Dec 10 22:27:49 2017"
-[dumpfile_size] 31241
+[dumpfile_mtime] "Sun Dec 10 23:11:51 2017"
+[dumpfile_size] 31499
 [savefile] "/home/gdrb/git/Lab_DL/Laboratorio 14_ CPU de cuatro instrucciones/cpu swap/ondas.gtkw"
 [timestart] 0
 [size] 1000 600
 [pos] -1 -1
-*-27.598154 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1
+*-27.598154 130000000 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1
 [sst_width] 229
-[signals_width] 102
+[signals_width] 147
 [sst_expanded] 1
 [sst_vpaned_height] 139
 @28
 clk
 @22
 inst[5:0]
-@29
+r0[3:0]
+r1[3:0]
+@23
+rt[3:0]
+@28
 done
 [pattern_trace] 1
 [pattern_trace] 0
