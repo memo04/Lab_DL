@@ -34,7 +34,8 @@ architecture beh of cpuswap is
         externo <= not cop;
         comp_2_reg0 <= a_t1 or (not reg and externo);
         comp_2_reg1 <= (a_t2 or reg);
-        ---------------------------
+
+        --------------------------------
         r0 <= r0_2_b0;
         r1 <= r1_2_b1;
         rt <= rt_2_bt;
@@ -53,7 +54,7 @@ architecture beh of cpuswap is
         port map(
             clk => clk,
             ent => bus_alam,
-            h => comp_2_reg0,
+            h => comp_2_reg1,
             sal => r1_2_b1  
         );
 

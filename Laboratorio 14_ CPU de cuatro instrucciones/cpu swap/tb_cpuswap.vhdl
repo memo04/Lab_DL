@@ -46,8 +46,8 @@ begin
 
         process
         begin
-            wait for 100 ns;
-                inst <= "001011"; 
+            wait for 50 ns;
+                inst <= "011011"; 
             wait for 50 ns;
                 inst <= "100000";
             wait for 200 ns;
