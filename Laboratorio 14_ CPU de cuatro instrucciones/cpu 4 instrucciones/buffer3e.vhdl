@@ -1,3 +1,7 @@
+--Guillermo Del Rio B
+--2112004585
+--Ing en Computacion
+
 library ieee;
 use ieee.std_logic_1164.all;
 

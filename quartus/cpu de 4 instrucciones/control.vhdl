@@ -34,13 +34,13 @@ begin
    end process;
 
 	  
-     --circuito combinacional describir de acuerdo a nuestra maquina de estados
+--circuito combinacional describir de acuerdo a nuestra maquina de estados
 
---         |              inst	            |
+--     |              inst	            |
 ----------------------------------------------------
 --	   |  7 | 6 | 5 | 4 | 3 | 2 | 1 | 0 |
 -- -------------------------------------------------
---         |  codop |  d a t o s    |  r d  |   
+--     |  codop |  d a t o s    |  r d  |   
 busw <= datos; --a esta instruccion le pasamos los datos
  process(ep)
   begin

@@ -1,3 +1,7 @@
+--Guillermo Del Rio B
+--2112004585
+--Ing en Computacion
+
 library ieee;
 use ieee.std_logic_1164.all;
 use ieee.numeric_std.all;
@@ -28,7 +32,7 @@ begin
             fint <= aint + bint;
             when '1' =>
             fint <= aint - bint;
-        end case ;
+        end case;
         
-    end process ; -- 
-end beh ; -- beh
+    end process;
+end beh ;

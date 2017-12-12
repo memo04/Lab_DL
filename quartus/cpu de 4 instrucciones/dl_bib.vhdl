@@ -7,7 +7,6 @@ package dl_bib is
 
 component decobin2hex7seg is
    port( 
-
 	ent: in std_logic_vector(3 downto 0);
 	sal: out std_logic_vector(6 downto 0)
        );
