@@ -1,10 +1,13 @@
 --Guillermo Del Rio B
 --2112004585
 --Ing en Computacion
+--biblioteca de puros componente
 
 library ieee;
 use ieee.std_logic_1164.all;
-package dl_bib is
+
+
+package dl_bib_comp is
     component registro is
         port(
             clk: in std_logic;
@@ -51,5 +54,5 @@ package dl_bib is
             buss:out std_logic_vector(3 downto 0)
         );
        end component control_cpu4inst;
-end package dl_bib ;
+end package dl_bib_comp ;
         
