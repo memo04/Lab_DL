@@ -1,5 +1,4 @@
---describimos nuestro buffer de 3 estados que nos va servir para que se pase los datos a nuestros registros
---utilizar std_logic y std_logic_vector 
+
 library ieee; --declaramos nuestra libreria
 use ieee.std_logic_1164.all;
 
@@ -17,7 +16,7 @@ architecture beh of buffer3e is
            if h = '1' then
               sal <= ent;
            else
-               sal <= (others => 'Z'); --high impedance alta impendancia asigna ceros cuando h sea igual a 0
+               sal <= (others => 'Z'); --hace que  alta inpedencia
         end if;    
      end process;
   end architecture beh;

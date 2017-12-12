@@ -15,7 +15,7 @@ architecture beh of registro is
   signal contador:integer range 0 to maximo := 0;
  
  begin
-     process(clk) --recibimos la seÃ±al de reloj en la lista de sensibilidad
+     process(clk) --recibimos la senal de reloj en la lista de sensibilidad
      begin
         if clk'event and clk='1' then
            if h = '1' then
